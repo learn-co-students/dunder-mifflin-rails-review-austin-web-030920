@@ -1,0 +1,8 @@
+<ul>
+<li><%= "Name: " + @dog.name %></li>
+<li><%= "Breed: " + @dog.breed %></li>
+<li><%= "Age: " + @dog.age %></li>
+<% @employees.each do |employee| %>
+<li><%= "Employee: " + employee.first_name + " " + employee.last_name %></li>
+<% end %>
+</ul>
