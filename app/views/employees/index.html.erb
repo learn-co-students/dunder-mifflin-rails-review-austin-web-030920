@@ -1,0 +1,4 @@
+<% @sorted_employees = @employees.sort_by{|employee| employee.first_name}%>
+<% @sorted_employees.each do |employee| %>
+<%= link_to employee.first_name + " " + employee.last_name, employee_path(employee) %><br><br>
+<% end %>

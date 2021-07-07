@@ -1,0 +1,4 @@
+<% @sorted_dogs = @dogs.sort_by{|dog| dog.employees.count} %>
+<% @dogs.each do |dog| %>
+<%= link_to dog.name, dog_path(dog) %>
+<% end %>
